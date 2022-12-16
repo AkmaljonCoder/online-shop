@@ -27,7 +27,7 @@ const Sidebar = () => {
         </TopDiv>
         <div className={isClosed===true? 'flex-div' : 'link-div'} >
           <h2 onClick={()=>{Navigate('/');setIsClosed(!isClosed)}} style={{animationDelay:'0.6s'}} >Home</h2>
-          <h2 onClick={()=>{Navigate('/menu');setIsClosed(!isClosed)}} style={{animationDelay:'0.7s'}} >Меню</h2>
+          <h2 onClick={()=>{Navigate('/menu');setIsClosed(!isClosed)}} style={{animationDelay:'0.7s'}} >Menu</h2>
           <button style={{animationDelay:'0.8s'}} className="button">Бронь столика</button>
         </div>
         <BottomDiv>

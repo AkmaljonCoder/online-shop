@@ -2,10 +2,6 @@ import styled from 'styled-components'
 
 // icons
 
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TelegramIcon from '@mui/icons-material/Telegram';
-
 export const MainWr = styled.div`
 
     .menu1{
@@ -77,6 +73,53 @@ export const MainWr = styled.div`
     .link-div{
         display: none;
     }
+
+    @media (max-width:768px) {
+        .menu1{
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            top: 0;
+            background-color: #333333;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.7s;
+            /* overflow: hidden; */
+
+            .icon{
+                display: none;
+            }
+        }
+
+        .menu2{
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            background-color: #333333;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.7s;
+            overflow: hidden;
+        }
+
+        @keyframes icAnimate {
+           0% { opacity: 0; translate: 0 50px; }
+           100% { opacity: 1; }
+        }
+
+        .icon{
+            animation: icAnimate 0.3s both;
+            animation-duration: 0.7s;
+            animation-delay: 1s;
+            display: block;
+        }
+
+    }
 `
 
 export const TopDiv = styled.div`
@@ -102,6 +145,23 @@ export const TopDiv = styled.div`
 
         :active{
             opacity: 0;
+        }
+    }
+
+    @media (max-width:768px) {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 25px;
+
+        .logo{
+            margin-left: 30px;
+            margin-bottom: 0px;
+        }
+
+        .menu{
+            margin-right: 30px;
         }
     }
 `
