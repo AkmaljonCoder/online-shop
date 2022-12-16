@@ -224,4 +224,70 @@ export const ImageDiv = styled.div`
     }
 `
 
+export const ButtonDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
+    p{
+        margin-bottom: 60px;
+    }
+
+    .buttons{
+        display: flex;
+        align-items: center;
+    }
+
+    button{
+        padding: 15px 30px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        cursor: pointer;
+    }
+
+    .gold{
+        color: #FFFFFF;
+        background-color: #B59571;
+        border: none;
+        margin-right: 45px;
+        border: 1px solid #B59571;
+    }
+
+    .white{
+        color: #333333;
+        background-color: rgb(0,0,0,0);
+        border: 1px solid rgba(51, 51, 51, 0.2);
+    }
+
+    @media (max-width:530px) {
+
+        button{
+            font-size: 15px;
+            padding: 10px 25px;
+        }
+    }
+
+    @media (max-width:500px) {
+        width: 100%;
+        .buttons{
+            width: 100%;
+            max-width: 90%;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+    }
+
+    @media (max-width:425px) {
+        .buttons{
+            flex-direction: column;
+            align-items: center;
+
+            button{
+                width: 100%;
+                padding: 10px 0;
+                margin: 15px 0;
+            }
+        }
+    }
+`

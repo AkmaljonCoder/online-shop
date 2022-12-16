@@ -85,7 +85,7 @@ export const Navbar = styled.div`
         max-width: 90%;
 
         .link{
-            padding: 21px 12px;
+            margin: 21px 12px;
         }
 
         button{

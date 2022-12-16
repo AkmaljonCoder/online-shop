@@ -1,7 +1,8 @@
 import React from 'react'
-import { Box, Container, ImageDiv, LittleDiv, TextDiv } from './style'
+import { Box, ButtonDiv, Container, ImageDiv, LittleDiv, TextDiv } from './style'
 
 import Card1 from '../../../Assets/Home/card1.png'
+import Card2 from '../../../Assets/Home/card2.png'
 
 const About = () => {
   return (
@@ -59,20 +60,49 @@ const About = () => {
             <img src={Card1} alt="" />
           </div>
           <div className="line-div">
-            <h3>Menu</h3>
+            <h3>Основное меню</h3>
             <div></div>
           </div>
         </div>
         <div className="box">
           <div className="outline-div">
-            <img src={Card1} alt="" />
+            <img src={Card2} alt="" />
           </div>
           <div className="line-div">
-            <h3>Menu</h3>
+            <h3>Барная карта</h3>
             <div></div>
           </div>
         </div>
       </ImageDiv>
+      <Box>
+        <LittleDiv>
+          <h3>доставка</h3>
+          <div></div>
+        </LittleDiv>
+        <TextDiv>
+          <h1>Служба доставки</h1>
+          <ButtonDiv>
+            <p>
+            At faucibus nullam mauris vitae ut non. 
+            Augue libero non nibh nec, et eget erat. 
+            Nascetur nunc neque, varius massa aliquam 
+            interdum turpis massa. Ac tortor aliquam 
+            risus, interdum nisl mauris sit. Ut 
+            placerat fermentum pellentesque ac at. 
+            Vitae venenatis faucibus urna mi eget 
+            vitae quam eu. Euismod sed mauris id 
+            turpis iaculis. Erat rutrum dolor, vitae 
+            morbi. <br /><br />
+            Nunc cras cras aliquet blandit faucibus massa 
+            sagittis semper. 
+            </p>
+            <div className="buttons">
+              <button className='gold'>Подробнее</button>
+              <button className='white'>Условия доставки</button>
+            </div>
+          </ButtonDiv>
+        </TextDiv>
+      </Box>
     </Container>
   )
 }
