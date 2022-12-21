@@ -5,10 +5,11 @@ import React from 'react'
 import Main from './Main/Main'
 import About from './About/About'
 
-const Home = () => {
+const Home = ({order,setOrder}) => {
+
   return (
     <>
-      <Main/>
+      <Main order={order} setOrder={setOrder}/>
       <About/>
     </>
   )

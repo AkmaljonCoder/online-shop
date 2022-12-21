@@ -13,7 +13,7 @@ import YouTube from '@mui/icons-material/YouTube';
 import Instagram from '@mui/icons-material/Instagram';
 import Telegram from '@mui/icons-material/Telegram';
 
-const Sidebar = () => {
+const Sidebar = ({order,setOrder}) => {
   const [isClosed, setIsClosed] = useState(false);
 
   const Navigate = useNavigate();
@@ -28,7 +28,7 @@ const Sidebar = () => {
         <div className={isClosed===true? 'flex-div' : 'link-div'} >
           <h2 onClick={()=>{Navigate('/');setIsClosed(!isClosed)}} style={{animationDelay:'0.6s'}} >Home</h2>
           <h2 onClick={()=>{Navigate('/menu');setIsClosed(!isClosed)}} style={{animationDelay:'0.7s'}} >Menu</h2>
-          <button style={{animationDelay:'0.8s'}} className="button">Бронь столика</button>
+          <button onClick={()=>setOrder(true)} style={{animationDelay:'0.8s'}} className="button">Бронь столика</button>
         </div>
         <BottomDiv>
           <YouTube className='icon' />

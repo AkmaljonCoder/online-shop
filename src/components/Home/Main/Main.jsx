@@ -2,7 +2,8 @@ import React from 'react'
 
 import { BottomText, Container, Navbar, Wrapper } from './style'
 
-const Main = () => {
+const Main = ({order,setOrder}) => {
+
   return (
     <Wrapper>
       <Container>
@@ -10,7 +11,7 @@ const Main = () => {
           <h3 className="link">Меню</h3>
           <h3 className="link">Доставка</h3>
           <h3 className="link">Оплата</h3>
-          <button>Бронь столика</button>
+          <button onClick={()=>setOrder(true)}>Бронь столика</button>
         </Navbar>
         <BottomText>
         Видовой ресторан Food Exxe Relo на Крестовском острове
