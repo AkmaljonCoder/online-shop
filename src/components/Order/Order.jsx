@@ -25,14 +25,14 @@ const Order = ({order,setOrder}) => {
                 <LogoImg src={Logo} />
                 <Title>Забронировать столик</Title>
                 <Input onChange={(e)=>setname(e.target.value)} value={name} placeholder='Имя'/>
-                <Input onChange={(e)=>setnumber(e.target.value)} value={number} placeholder='Телефон'/>
+                <Input type={'number'} onChange={(e)=>setnumber(e.target.value)} value={number} placeholder='Телефон'/>
                 <InpWrapper>
-                    <input value={guest} onChange={(e)=>setguest(e.target.value)} placeholder='Гостей' className="input" />
-                    <input type={'time'} onChange={(e)=>settime(e.target.value)} value={time} placeholder='Время' className="input" />
+                    <input type={'number'} value={guest} onChange={(e)=>setguest(e.target.value)} placeholder='Гостей' className="input" />
+                    <input onChange={(e)=>settime(e.target.value)} value={time} placeholder='Время' className="input" />
                 </InpWrapper>
                 <Button onClick={SendFunc}>Забронировать</Button>
                 <CloseIc
-                onClick={()=>setOrder(false)} 
+                onClick={()=>setOrder(false)}
                 src={Close} alt="" className="close"
                 /> {/* close icon */}
             </div>

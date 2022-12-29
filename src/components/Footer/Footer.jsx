@@ -9,7 +9,7 @@ const Footer = () => {
     <Wrapper>
       <Container>
         <h3>Политика конфиденциальности</h3>
-        <h2>Дизайн d-e-n.ru</h2>
+        <h2>email: akmaljonazimjonovcoder@gmail.com</h2>
       </Container>
     </Wrapper>
   )

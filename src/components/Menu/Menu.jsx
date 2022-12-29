@@ -1,12 +1,14 @@
 import React from 'react'
+import {Outlet} from 'react-router-dom'
 
-import { Container } from './style'
+import Navbar from './Navbar/Navbar'
 
 const Menu = () => {
   return (
-    <Container>
-      <h1>Menu</h1>
-    </Container>
+    <>
+      <Navbar/>
+      <Outlet/>
+    </>
   )
 }
 
