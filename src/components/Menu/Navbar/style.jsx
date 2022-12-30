@@ -1,16 +1,20 @@
 import styled from 'styled-components'
 
+export const Wrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+`
+
 export const Container = styled.div`
     width: 100%;
     max-width: 1440px;
-    margin: 0 auto;
 
     .t-left{
         margin-left: 160px;
     }
 
     @media (max-width:768px) {
-        margin-top: 120px;
 
         .t-left{
             margin-left: 30px;
@@ -70,6 +74,10 @@ export const Pages = styled.div`
         margin-right: 30px;
     }
 
+    @media (max-width:768px) {
+        margin-top: 120px;
+    }
+
     @media (max-width:565px) {
         height: 80px;
     }
@@ -86,7 +94,6 @@ export const Pages = styled.div`
 
     @media (max-width:375px) {
         max-width: none;
-        justify-content: start;
 
         h3{
             margin: 0 30px;
